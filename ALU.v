@@ -69,6 +69,7 @@ module ALU(A, B, Cin, Mode, Y, Cout, Overflow);
 		case(Mode)
 			//Logical shift A left by 1-bit.
 			4'd0: begin
+				Y = A << 1’b1;
 			end
 			//Arithmetic shift A left by 1-bit.
 			4'd1: begin
